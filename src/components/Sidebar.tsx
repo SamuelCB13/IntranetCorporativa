@@ -47,7 +47,7 @@ export default function Sidebar() {
                         <div className="p-4 border-b border-neutral-800 h-20 flex items-center justify-center">
                             <div className="flex items-center justify-between gap-5">
                                 {!isCollapsed && (
-                                    <h1 className="text-lg font-semibold">Intranet Global</h1>
+                                    <h1 className="text-lg font-black">Intranet Global</h1>
                                 )}
                                 <button
                                     onClick={toggleSidebar}
@@ -110,10 +110,10 @@ export default function Sidebar() {
 
                     {/* Sidebar en móviles (overlay completo) */}
                     {isMobileOpen && (
-                        <div className="fixed inset-0 z-40  bg-opacity-50 flex sm:hidden">
+                        <div className="fixed inset-0 z-40 backdrop-blur-xs bg-opacity-50 flex sm:hidden">
                             <aside className="w-64 h-full bg-neutral-950 text-neutral-100 flex flex-col">
                                 <div className="p-4 border-b border-neutral-800 h-20 flex items-center justify-between">
-                                    <h1 className="text-lg font-semibold">Intranet Global</h1>
+                                    <h1 className="text-lg font-black">Intranet Global</h1>
                                     <button
                                         onClick={toggleMobileSidebar}
                                         className="p-2 rounded-full hover:bg-neutral-800"

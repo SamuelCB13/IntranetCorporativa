@@ -2,7 +2,7 @@ import { ClipboardCheckIcon, CloudLightningIcon, HeartHandshakeIcon, HelpCircleI
 
 export const menuItems = [
     { name: 'Inicio', href: '/', icon: Home },
-    { name: 'Talento Humano', href: '/inicio', icon: HeartHandshakeIcon },
+    { name: 'Talento Humano', href: '/talento-humano', icon: HeartHandshakeIcon },
     { name: 'Usuarios', href: '/folders', icon: UsersRoundIcon },
     { name: 'Greta', href: '/favorites', icon: HelpCircleIcon },
     { name: 'Aplicaciones', href: '/tags', icon: LayoutGridIcon },

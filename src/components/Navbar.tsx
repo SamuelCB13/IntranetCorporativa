@@ -95,7 +95,7 @@ export default function Navbar() {
                     className="hidden items-center justify-between w-full md:flex md:w-auto md:order-1 z-40"
                     id="navbar-menu"
                 >
-                    <ul className="flex flex-col font-medium py-2 md:p-0 mt-6 border border-neutral-700 rounded-xl bg-neutral-950 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+                    <ul className="flex flex-col font-black py-2 md:p-0 mt-6 border border-neutral-700 rounded-xl bg-neutral-950 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent text-xl">
                         <p>Bienvenidos a nuestra intranet global</p>
                     </ul>
                 </div>

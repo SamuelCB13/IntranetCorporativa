@@ -10,7 +10,7 @@ export default function SignInPage() {
 
     return (
         <main className="min-h-screen flex items-center justify-center w-full px-4 py-6 sm:px-6 md:py-12">
-            <article className="absolute inset-0 -z-10 h-full w-full">
+            <article className="absolute inset-0 z-0 h-full w-full">
                 <Image
                     src="/background.webp"
                     alt="Fondo"
