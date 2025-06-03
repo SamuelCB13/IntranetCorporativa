@@ -10,7 +10,7 @@ import { PanelRightCloseIcon, PanelRightOpenIcon, SearchIcon } from 'lucide-reac
 export default function Sidebar() {
     const { data: session } = useSession();
     const pathname = usePathname();
-    const [isCollapsed, setIsCollapsed] = useState(false);
+    const [isCollapsed, setIsCollapsed] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');
     const [isMobileOpen, setIsMobileOpen] = useState(false);
 

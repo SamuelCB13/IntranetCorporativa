@@ -1,15 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRightIcon, CrownIcon } from "lucide-react";
-import { capsulasInformativas } from "./interface";
+import { capsulasInformativas, quienesSomosData, valoresData } from "./interface";
 
 export default function HomePage() {
     return (
         <main className="w-full p-5">
-            <article className="flex flex-col items-center justify-center gap-5 w-full max-w-6xl mx-auto">
-                <section className="w-full bg-neutral-950 border border-neutral-800 rounded-xl">
+            <article className="flex flex-col items-center justify-center gap-15 w-full max-w-6xl mx-auto py-5">
+                <section className="w-full bg-neutral-950 border border-neutral-800 rounded-xl hover:translate-2 transition-all duration-200">
                     <Link
-                        href={"/"}
+                        href={"#"}
                         className="flex flex-col md:flex-row md:items-center justify-between gap-10 py-5 px-7"
                     >
                         <div className="flex-1 flex items-start flex-col gap-3">
@@ -44,7 +44,7 @@ export default function HomePage() {
                 </section>
 
                 {/* Sección de Cápsulas informativas */}
-                <section className="w-full bg-neutral-950 rounded-xl">
+                <section className="w-full">
                     <div className="text-center py-5 px-7">
                         <h2 className="text-xl font-black text-white">Cápsulas informativas</h2>
                         <p className="text-base font-bold text-neutral-400">
@@ -53,13 +53,13 @@ export default function HomePage() {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                         {capsulasInformativas.map((capsula) => (
-                            <div key={capsula.id} className="flex flex-col items-start gap-3 border border-neutral-800 rounded-xl">
+                            <div key={capsula.id} className="flex flex-col items-start gap-3 border border-neutral-800 rounded-xl hover:scale-105 transition-all duration-200">
                                 <Image
                                     src={capsula.imagen}
                                     alt={capsula.imageAlt}
-                                    width={360}
-                                    height={176}
-                                    className="rounded-t-xl w-full h-44 object-cover object-top mask-bottom"
+                                    width={1000}
+                                    height={208}
+                                    className="rounded-t-xl w-full h-52 object-cover object-center mask-bottom"
                                     priority
                                     quality={100}
                                 />
@@ -79,12 +79,94 @@ export default function HomePage() {
                                 <section className="px-5 pb-3">
                                     <Link
                                         href={capsula.href}
-                                        className="flex items-center gap-1 text-sm font-semibold text-neutral-500 hover:underline hover:text-white transition-all duration-200"
+                                        className="flex items-center gap-1 text-base font-bold text-neutral-400 hover:underline hover:text-white transition-all duration-200"
                                     >
                                         Ver más
                                         <ArrowUpRightIcon className="size-4" />
                                     </Link>
                                 </section>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                {/* Sección de Quiénes somos - Dinámica */}
+                <section className="w-full max-w-5xl">
+                    <div className="text-center py-5 px-7">
+                        <h2 className="text-xl font-black text-white">¿Quiénes somos?</h2>
+                        <p className="text-base font-bold text-neutral-400">
+                            Conoce más sobre nosotros, nuestra visión y misión. Estamos comprometidos con la excelencia y la innovación.
+                        </p>
+                    </div>
+
+                    {quienesSomosData.map((somos, index) => (
+                        <div
+                            key={somos.id}
+                            className={`flex flex-col md:flex-row md:items-center justify-between gap-10 my-10 ${somos.posicion === 'izquierda'
+                                ? 'border-r-3 border-neutral-800'
+                                : 'border-l-3 border-neutral-800'
+                                } ${index === quienesSomosData.length - 1 ? 'mb-0' : ''}`}
+                        >
+                            {/* Contenido */}
+                            <div className={`flex-1 flex items-start flex-col gap-3 ${somos.posicion === 'izquierda' ? 'md:order-2' : 'md:order-1'
+                                }`}>
+                                <section className="px-5">
+                                    <p className="text-xl font-black text-white">{somos.titulo}</p>
+                                </section>
+                                <section className="px-5">
+                                    <p className="text-sm text-neutral-500">
+                                        {somos.descripcion}
+                                    </p>
+                                </section>
+                            </div>
+
+                            {/* Imagen */}
+                            <div className={`flex-1 px-5 md:px-0 ${somos.posicion === 'izquierda' ? 'md:order-1' : 'md:order-2'
+                                }`}>
+                                <Image
+                                    src={somos.imagen}
+                                    alt={somos.imageAlt}
+                                    width={512}
+                                    height={256}
+                                    className="rounded-t-xl w-full h-52 object-cover object-center mask-bottom"
+                                    priority
+                                    quality={100}
+                                />
+                            </div>
+                        </div>
+                    ))}
+                </section>
+
+                {/* Sección de Valores - Ahora dinámica */}
+                <section className="w-full">
+                    <div className="text-center py-5 px-7">
+                        <h2 className="text-xl font-black text-white">Nuestros valores</h2>
+                        <p className="text-base font-bold text-neutral-400">
+                            Conoce más sobre nuestros valores, que son la base de nuestra cultura y nos guían en cada acción que realizamos.
+                        </p>
+                    </div>
+
+                    {/* Grid responsive de valores */}
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-8 gap-6 py-8">
+                        {valoresData.map((valor) => (
+                            <div
+                                key={valor.id}
+                                className="flex flex-col items-center justify-center gap-3 p-4 grayscale hover:grayscale-0 hover:scale-105 transition-all duration-200"
+                            >
+                                <div className="size-16 md:size-20 flex items-center justify-center">
+                                    <Image
+                                        src={valor.icono}
+                                        alt={valor.iconoAlt}
+                                        width={64}
+                                        height={64}
+                                        className="w-full h-full aspect-square object-contain"
+                                        priority
+                                        quality={100}
+                                    />
+                                </div>
+                                <p className="text-xs md:text-sm font-bold text-neutral-500 text-center">
+                                    {valor.titulo}
+                                </p>
                             </div>
                         ))}
                     </div>

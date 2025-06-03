@@ -1,8 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Providers from "./Providers";
 
 const inter = Inter({ subsets: ['latin'] })
@@ -29,8 +30,9 @@ export default function RootLayout({
                         {/* Contenido principal */}
                         <div className="flex flex-col flex-1 overflow-hidden">
                             <Navbar />
-                            <main className="flex-1 overflow-y-auto bg-neutral-950">
+                            <main className="flex-1 overflow-y-scroll bg-neutral-950 scrollbar-hide">
                                 {children}
+                                <Footer />
                             </main>
                         </div>
                     </div>
