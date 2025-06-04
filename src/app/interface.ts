@@ -131,49 +131,49 @@ export const valoresData: ValorItem[] = [
     {
         id: 1,
         titulo: "Respeto",
-        icono: "/iconos/respeto.webp",
+        icono: "/valores/respeto.webp",
         iconoAlt: "Icono de Respeto"
     },
     {
         id: 2,
         titulo: "Honestidad",
-        icono: "/iconos/honestidad.webp",
+        icono: "/valores/honestidad.webp",
         iconoAlt: "Icono de Honestidad"
     },
     {
         id: 3,
         titulo: "Confianza",
-        icono: "/iconos/confianza.webp",
+        icono: "/valores/confianza.webp",
         iconoAlt: "Icono de Confianza"
     },
     {
         id: 4,
         titulo: "Compromiso",
-        icono: "/iconos/compromiso.webp",
+        icono: "/valores/compromiso.webp",
         iconoAlt: "Icono de Compromiso"
     },
     {
         id: 5,
         titulo: "Coherencia",
-        icono: "/iconos/coherencia.webp",
+        icono: "/valores/coherencia.webp",
         iconoAlt: "Icono de Coherencia"
     },
     {
         id: 6,
         titulo: "Responsabilidad",
-        icono: "/iconos/responsabilidad.webp",
+        icono: "/valores/responsabilidad.webp",
         iconoAlt: "Icono de Responsabilidad"
     },
     {
         id: 7,
         titulo: "Inclusión",
-        icono: "/iconos/inclusion.webp",
+        icono: "/valores/inclusion.webp",
         iconoAlt: "Icono de Inclusión"
     },
     {
         id: 8,
         titulo: "Dinamismo",
-        icono: "/iconos/dinamismo.webp",
+        icono: "/valores/dinamismo.webp",
         iconoAlt: "Icono de Dinamismo"
     }
 ];
