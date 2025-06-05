@@ -23,14 +23,14 @@ export const capsulasInformativas: CapsulaInformativa[] = [
         href: "/capsulas/manejo-emocional"
     },
     {
-        id: "horoscopo",
-        titulo: "Horóscopo 26/05 - 01/06",
-        descripcion: "Conoce las predicciones astrológicas para la semana actual. Descubre cómo los astros pueden influir en tu vida personal, profesional y emocional.",
-        imagen: "/horoscopo.webp",
-        imageAlt: "Horóscopo Image",
-        categoria: "Horóscopo",
-        categoriaAbrev: "HO",
-        href: "/capsulas/horoscopo"
+        id: "separacion-residuos",
+        titulo: "Separación de Residuos",
+        descripcion: "La separación de residuos es esencial para el cuidado del medio ambiente. Aprende cómo clasificar tus desechos correctamente y contribuir a un planeta más limpio.",
+        imagen: "/residuos.webp",
+        imageAlt: "Residuos Image",
+        categoria: "Residuos",
+        categoriaAbrev: "SR",
+        href: "/capsulas/separacion-residuos"
     },
     {
         id: "evaluacion-desempeno",

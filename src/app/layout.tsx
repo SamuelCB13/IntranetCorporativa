@@ -23,7 +23,7 @@ export default function RootLayout({
         <html lang="es">
             <body className={inter.className}>
                 <Providers>
-                    <div className="flex h-screen overflow-hidden">
+                    <div className="flex h-dvh overflow-hidden">
                         {/* Sidebar fijo */}
                         <Sidebar />
 

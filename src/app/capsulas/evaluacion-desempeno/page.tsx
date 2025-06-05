@@ -1,6 +1,6 @@
 export default function EvaluacionDesempenoPage() {
     return (
-        <main className="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+        <main className="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-6 animate-fadeIn">
             <article className="flex flex-col items-center justify-center gap-8 sm:gap-12 lg:gap-15 w-full max-w-4xl mx-auto">
                 <section className="w-full flex flex-col gap-6 sm:gap-8 lg:gap-10">
                     <header className="flex flex-col gap-3 sm:gap-4 border border-neutral-600 rounded-xl p-4 sm:p-6 lg:p-8">

@@ -40,7 +40,7 @@ export default function Sidebar() {
                     <aside className={`
                         ${isCollapsed ? 'w-16' : 'w-64'}
                         hidden sm:flex
-                        h-screen bg-neutral-950 text-neutral-100 border-r border-neutral-800
+                        h-dvh bg-neutral-950 text-neutral-100 border-r border-neutral-800
                         flex-col transition-all duration-300 ease-in-out
                     `}>
                         {/* Header */}

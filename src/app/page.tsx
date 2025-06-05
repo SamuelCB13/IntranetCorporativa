@@ -5,7 +5,7 @@ import { capsulasInformativas, quienesSomosData, valoresData } from "./interface
 
 export default function HomePage() {
     return (
-        <main className="w-full p-5">
+        <main className="w-full p-5 animate-fadeIn">
             <article className="flex flex-col items-center justify-center gap-15 w-full max-w-6xl mx-auto py-5">
                 <section className="w-full bg-neutral-950 border border-neutral-800 rounded-xl hover:translate-2 transition-all duration-200">
                     <Link
