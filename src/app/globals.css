@@ -7,18 +7,33 @@
     }
 }
 
-/* Para ocultar completamente el scrollbar */
-.scrollbar-hide {
-    -ms-overflow-style: none;
-    /* IE y Edge */
-    scrollbar-width: none;
-    /* Firefox */
+/* Scrollbar oscuro para navegadores basados en WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
 }
 
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
-    /* Chrome, Safari y Opera */
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+    /* Fondo oscuro del track */
 }
+
+::-webkit-scrollbar-thumb {
+    background-color: #262626;
+    /* Color del scroll */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+    /* Color al pasar el mouse */
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #262626 #0a0a0a;
+}
+
 
 @keyframes fadeIn {
     from {

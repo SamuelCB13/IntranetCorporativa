@@ -23,14 +23,14 @@ export default function RootLayout({
         <html lang="es">
             <body className={inter.className}>
                 <Providers>
-                    <div className="flex h-dvh overflow-hidden">
+                    <div className="flex h-dvh">
                         {/* Sidebar fijo */}
                         <Sidebar />
 
                         {/* Contenido principal */}
-                        <div className="flex flex-col flex-1 overflow-hidden">
+                        <div className="flex flex-col flex-1">
                             <Navbar />
-                            <main className="flex-1 overflow-y-scroll bg-neutral-950 scrollbar-hide">
+                            <main className="flex-1 overflow-y-scroll bg-neutral-950">
                                 {children}
                                 <Footer />
                             </main>
