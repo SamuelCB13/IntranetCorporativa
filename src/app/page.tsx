@@ -1,9 +1,21 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRightIcon, CrownIcon } from "lucide-react";
 import { capsulasInformativas, quienesSomosData, valoresData } from "./interface";
+import { useSession } from "next-auth/react";
+import Loading from "./loading";
 
 export default function HomePage() {
+    const { data: session } = useSession();
+
+    if (!session) {
+        return (
+            <Loading />
+        )
+    }
+
     return (
         <main className="w-full p-5 animate-fadeIn">
             <article className="flex flex-col items-center justify-center gap-15 w-full max-w-6xl mx-auto py-5">

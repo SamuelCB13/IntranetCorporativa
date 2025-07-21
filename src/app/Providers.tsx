@@ -8,7 +8,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        // Simula un "loading" por 1.5 segundo
+        // Simula un "loading" por 1 segundo
         const timer = setTimeout(() => {
             setIsLoading(false);
         }, 1000);

@@ -1,12 +1,18 @@
 'use client';
 
 import { FcGoogle } from "react-icons/fc";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { CircleAlertIcon } from "lucide-react";
+import { redirect } from "next/navigation";
 
 export default function SignInPage() {
+    const { data: session } = useSession();
+
+    if (session) {
+        redirect("/");
+    }
 
     return (
         <main className="min-h-dvh flex items-center justify-center w-full px-4 py-6 sm:px-6 md:py-12">
@@ -15,7 +21,7 @@ export default function SignInPage() {
                     src="/background.webp"
                     alt="Fondo"
                     fill
-                    className="object-cover "
+                    className="object-cover"
                     quality={100}
                     priority
                 />
