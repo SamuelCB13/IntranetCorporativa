@@ -5,9 +5,9 @@ export const menuItems = [
     { name: 'Talento Humano', href: '/talento-humano', icon: HeartHandshakeIcon },
     { name: 'Usuarios', href: '/folders', icon: UsersRoundIcon },
     { name: 'Greta', href: '/favorites', icon: HelpCircleIcon },
-    { name: 'Aplicaciones', href: '/tags', icon: LayoutGridIcon },
+    { name: 'Aplicaciones', href: '/aplicaciones', icon: LayoutGridIcon },
     { name: 'Beneficios', href: '/archive', icon: SmilePlusIcon },
     { name: 'Sistema de Gestión', href: '/trash', icon: MonitorCogIcon },
     { name: 'Global Learning', href: '/trash', icon: CloudLightningIcon },
-    { name: 'Evaluación del Empleado', href: '/trash', icon: ClipboardCheckIcon }
+    { name: 'Evaluación del Empleado', href: 'https://bpogs.com/Relacion_Empleado/#/login', icon: ClipboardCheckIcon }
 ];

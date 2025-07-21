@@ -15,5 +15,5 @@ export async function middleware(req: any) {
 }
 
 export const config = {
-    matcher: ["/", "/talento-humano"], // Protege las rutas que quieras aquí
+    matcher: ["/", "/talento-humano", "/capsulas"],
 };

@@ -5,13 +5,16 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { CogIcon, LogOutIcon, MailCheckIcon } from "lucide-react";
+import Loading from "@/app/loading";
 
 export default function Navbar() {
     const { data: session } = useSession();
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     if (!session) {
-        return null;
+        return (
+            <Loading />
+        );
     }
 
     return (

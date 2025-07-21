@@ -2,14 +2,18 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { AiFillTikTok, AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
+import { AiFillTikTok, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { useSession } from "next-auth/react";
+import Loading from "@/app/loading";
+import FacebookIcon from "../../public/icons/facebookIcon";
 
 export default function Footer() {
     const { data: session } = useSession();
 
     if (!session) {
-        return null;
+        return (
+            <Loading />
+        );
     }
 
     return (
@@ -36,7 +40,7 @@ export default function Footer() {
                                 target="_blank"
                                 className="text-neutral-500 hover:text-white font-bold rounded-full text-sm text-center transition duration-200"
                             >
-                                <AiFillFacebook className="size-6" />
+                                <FacebookIcon className="size-6" />
                             </Link>
                             <Link
                                 href="https://www.instagram.com/bpoglobalservices/"

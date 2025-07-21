@@ -65,7 +65,7 @@ export const capsulasInformativas: CapsulaInformativa[] = [
     {
         id: "inspiracion-crecimiento",
         titulo: "Inspiración y crecimiento",
-        descripcion: "Encuentra inspiración para tu crecimiento profesional. Descubre historias motivadoras y consejos prácticos para alcanzar tus metas y superar desafíos en este primer episodio.",
+        descripcion: "Encuentra inspiración para tu crecimiento profesional. Descubre historias motivadoras y consejos prácdesarrolloos para alcanzar tus metas y superar desafíos en este primer episodio.",
         imagen: "/inspiracion.webp",
         imageAlt: "Inspiration Image",
         categoria: "Inspiración",

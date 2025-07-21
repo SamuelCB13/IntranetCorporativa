@@ -25,7 +25,7 @@ export default function Sidebar() {
     return (
         <main>
             {session && (
-                <>
+                <section>
                     {/* Botón flotante visible SOLO en móviles */}
                     <button
                         onClick={toggleMobileSidebar}
@@ -162,7 +162,7 @@ export default function Sidebar() {
                             </aside>
                         </div>
                     )}
-                </>
+                </section>
             )}
         </main>
     );
