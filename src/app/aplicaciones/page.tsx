@@ -66,7 +66,7 @@ export default function AplicacionesPage() {
     if (!session) {
         return (
             <Loading />
-        )
+        );
     }
 
     return (

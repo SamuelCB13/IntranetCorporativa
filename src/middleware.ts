@@ -5,7 +5,7 @@ import { getToken } from "next-auth/jwt";
 export async function middleware(req: any) {
     const token = await getToken({ req });
 
-    // Si no hay token, redirige a la página inicial
+    // Si no hay token, redirige a la página del inicio de sesión
     if (!token) {
         return NextResponse.redirect(new URL("/auth/signin", req.url));
     }
@@ -15,5 +15,5 @@ export async function middleware(req: any) {
 }
 
 export const config = {
-    matcher: ["/", "/talento-humano", "/capsulas"],
+    matcher: ["/", "/capsulas", "/capsulas/:path*", "/greta", "/aplicaciones"],
 };

@@ -4,17 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { AiFillTikTok, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { useSession } from "next-auth/react";
-import Loading from "@/app/loading";
 import FacebookIcon from "../../public/icons/facebookIcon";
 
 export default function Footer() {
     const { data: session } = useSession();
-
-    if (!session) {
-        return (
-            <Loading />
-        );
-    }
 
     return (
         <main>

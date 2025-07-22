@@ -1,10 +1,10 @@
-import { ClipboardCheckIcon, CloudLightningIcon, HeartHandshakeIcon, HelpCircleIcon, Home, LayoutGridIcon, MonitorCogIcon, SmilePlusIcon, UsersRoundIcon } from "lucide-react";
+import { ClipboardCheckIcon, CloudLightningIcon, HandHelpingIcon, HeartHandshakeIcon, Home, LayoutGridIcon, MonitorCogIcon, SmilePlusIcon, UsersRoundIcon } from "lucide-react";
 
 export const menuItems = [
     { name: 'Inicio', href: '/', icon: Home },
     { name: 'Talento Humano', href: '/talento-humano', icon: HeartHandshakeIcon },
-    { name: 'Usuarios', href: '/folders', icon: UsersRoundIcon },
-    { name: 'Greta', href: '/favorites', icon: HelpCircleIcon },
+    { name: 'Usuarios', href: '/usuarios', icon: UsersRoundIcon },
+    { name: 'Greta', href: '/greta', icon: HandHelpingIcon },
     { name: 'Aplicaciones', href: '/aplicaciones', icon: LayoutGridIcon },
     { name: 'Beneficios', href: '/archive', icon: SmilePlusIcon },
     { name: 'Sistema de Gestión', href: '/trash', icon: MonitorCogIcon },
