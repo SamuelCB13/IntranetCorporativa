@@ -39,7 +39,7 @@ export default function Navbar() {
                                         aria-expanded={isDropdownOpen}
                                     >
                                         <Image
-                                            src={session.user.image || ''}
+                                            src={session.user.image ?? ''}
                                             alt="Foto del usuario"
                                             width={40}
                                             height={40}
@@ -49,7 +49,7 @@ export default function Navbar() {
                                     </button>
                                     {/* Dropdown del usuario */}
                                     {isDropdownOpen && (
-                                        <div className="absolute right-0 mt-6 z-50 text-base list-none bg-neutral-950 border-neutral-700 divide-y divide-neutral-700 rounded-xl shadow-lg">
+                                        <div className="absolute right-0 mt-6 z-50 text-base list-none bg-neutral-950 border border-neutral-700 divide-y divide-neutral-700 rounded-xl shadow-lg">
                                             <div className="px-4 py-3">
                                                 <span className="block text-sm text-neutral-300 font-bold truncate">
                                                     Hola, {session.user.name} 👋🏻

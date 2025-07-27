@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Aplicaciones, aplicaciones } from "./components/interface";
+import { Aplicaciones, aplicaciones } from "./components/interfaces";
 import { useSession } from "next-auth/react";
 import ArrowUpIcon from "../../../public/icons/arrowUpIcon";
 import Loading from "../loading";
@@ -77,7 +77,7 @@ export default function AplicacionesPage() {
                     <div className="text-center pb-5 px-7">
                         <h2 className="text-xl font-black text-white">Aplicaciones Corporativas</h2>
                         <p className="text-base font-bold text-neutral-400">
-                            Hola {session?.user?.name || 'Usuario'}, aquí podrás ver todas las herramientas necesarias para tus labores diarias. Encuentra tus herramientas de trabajo.
+                            Hola {session?.user?.name ?? 'Usuario'}, aquí podrás ver todas las herramientas necesarias para tus labores diarias. Encuentra tus herramientas de trabajo.
                         </p>
                     </div>
 

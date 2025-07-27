@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { tipsTecnologicos, acciones } from "./components/interface";
+import { tipsTecnologicos, acciones } from "./components/interfaces";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
 import Loading from "../loading";

@@ -15,5 +15,5 @@ export async function middleware(req: any) {
 }
 
 export const config = {
-    matcher: ["/", "/capsulas", "/capsulas/:path*", "/greta", "/aplicaciones"],
+    matcher: ["/", "/capsulas", "/capsulas/:path*", "/usuarios", "/greta", "/aplicaciones"],
 };
