@@ -74,7 +74,7 @@ export default function RegimenTransicionPage() {
                             <div className="flex flex-col gap-2">
                                 <h3 className="text-xs sm:text-sm font-black text-white flex items-center gap-2">
                                     <span className="text-neutral-400 flex-shrink-0">2.</span>
-                                    <span className="leading-tight font-light text-neutral-500">En caso afirmativo, <span className="font-light text-white">envíe la certificación oficial de semanas cotizadas</span> a comunicaciones@bpogs.com, expedida por la entidad correspondiente (Colpensiones, fondo privado u otra).</span>
+                                    <span className="leading-tight font-light text-neutral-500">En caso afirmativo, <span className="font-light text-white">envíe la certificación oficial de semanas cotizadas</span> a comunicaciones@esece.com, expedida por la entidad correspondiente (Colpensiones, fondo privado u otra).</span>
                                 </h3>
                             </div>
 
@@ -102,7 +102,7 @@ export default function RegimenTransicionPage() {
 
                     <section className="flex flex-col gap-4 sm:gap-6">
                         <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed">
-                            Si tienes alguna duda o requieres apoyo en la gestión del documento, escribe al correo: talentohumano@bpogs.com
+                            Si tienes alguna duda o requieres apoyo en la gestión del documento, escribe al correo: talentohumano@esece.com
                         </p>
                     </section>
                 </section>

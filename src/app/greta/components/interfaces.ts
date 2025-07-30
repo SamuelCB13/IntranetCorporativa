@@ -1,3 +1,5 @@
+import { HandPlatterIcon, HeadphonesIcon, MailPlusIcon, MonitorSmartphoneIcon } from "lucide-react";
+
 // Interfaz para los tips tecnológicos
 export interface TipsTecnologicos {
     id: string;
@@ -103,5 +105,146 @@ export const acciones: Acciones[] = [
         imagen: "/greta/solicitud-cambios.webp",
         imageAlt: "Solicitud de Cambios",
         href: "https://bpogs.com/intranet/wp-content/uploads/2022/06/Formato-solicitud-de-cambios.xlsx",
+    },
+];
+
+// Interface para tiempos de respuesta
+export interface TiempoRespuesta {
+    id: string;
+    tipo: 'incidente' | 'requerimiento';
+    prioridad: 'alta' | 'media' | 'baja';
+    tiempo: string;
+    descripcion?: string;
+}
+
+// Interface para horarios de atención
+export interface HorarioAtencion {
+    id: string;
+    medioIngreso: string;
+    horario: string;
+    dias: string;
+    observaciones: string;
+}
+
+// Interface para definiciones
+export interface Definicion {
+    termino: string;
+    descripcion: string;
+}
+
+export interface TiemposEsperaPopupProps {
+    isOpen: boolean;
+    onClose: () => void;
+    tiemposRespuesta?: TiempoRespuesta[];
+    horariosAtencion?: HorarioAtencion[];
+    definiciones?: Definicion[];
+}
+
+// Array de datos para los tiempos de respuesta
+export const tiempoRespuesta: TiempoRespuesta[] = [
+    {
+        id: "inc-alta",
+        tipo: "incidente",
+        prioridad: "alta",
+        tiempo: "2 horas"
+    },
+    {
+        id: "inc-media",
+        tipo: "incidente",
+        prioridad: "media",
+        tiempo: "4 horas"
+    },
+    {
+        id: "inc-baja",
+        tipo: "incidente",
+        prioridad: "baja",
+        tiempo: "8 horas"
+    },
+    {
+        id: "req-baja",
+        tipo: "requerimiento",
+        prioridad: "baja",
+        tiempo: "12 horas"
+    }
+];
+
+// Array de datos para los horarios
+export const horarioAtencion: HorarioAtencion[] = [
+    {
+        id: "telefonico",
+        medioIngreso: "Telefónico",
+        horario: "6:00 am a 9:00 pm",
+        dias: "Lunes a sábado",
+        observaciones: "Domingos y horarios después de las 9:00 pm se atienden por disponibilidad telefónica."
+    },
+    {
+        id: "self-service",
+        medioIngreso: "Self Service",
+        horario: "6:00 am a 9:00 pm",
+        dias: "Lunes a sábado",
+        observaciones: "Domingos y horarios después de las 9:00 pm se atienden por disponibilidad telefónica."
+    },
+    {
+        id: "whatsapp",
+        medioIngreso: "WhatsApp",
+        horario: "6:00 am a 9:00 pm",
+        dias: "Lunes a sábado",
+        observaciones: "Domingos y horarios después de las 9:00 pm se atienden por disponibilidad telefónica."
+    }
+];
+
+// Array de datos para las definiciones
+export const definicion: Definicion[] = [
+    {
+        termino: "Incidentes",
+        descripcion: "Es cualquier evento que interrumpa el funcionamiento normal de un servicio afectando ya sea a uno, a un grupo o a todos los usuarios de un servicio."
+    },
+    {
+        termino: "Requerimientos",
+        descripcion: "Es algo nuevo, como información o acceso; puede tomarse como una petición de un usuario solicitando información, asesoramiento, un cambio."
+    }
+];
+
+// Interface para horarios de atención
+export interface InformacionHorarios {
+    id: string;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    icono: React.ComponentType<any>;
+    contacto: string;
+    disponibilidad: string;
+};
+
+export interface HorarioAtencionPopupProps {
+    isOpen: boolean;
+    onClose: () => void;
+    infoHorario?: InformacionHorarios[];
+    definiciones?: Definicion[];
+}
+
+// Array de datos para los horarios
+export const informacionHorarios: InformacionHorarios[] = [
+    {
+        id: "telefono",
+        icono: HeadphonesIcon,
+        contacto: "448 92 76 ext | 8000",
+        disponibilidad: "Lunes a sábado de 6:00 am a 9:00 pm | Domingos todo el día | Nocturnos 9:00 pm a 5:30 am (Por disponibilidad telefónica)",
+    },
+    {
+        id: "whatsapp",
+        icono: MonitorSmartphoneIcon,
+        contacto: "+57 314 770 9706",
+        disponibilidad: "Lunes a sábado de 6:00 am a 9:00 pm | Domingos todo el día | Nocturnos 9:00 pm a 5:30 am (Por disponibilidad telefónica)"
+    },
+    {
+        id: "correo",
+        icono: MailPlusIcon,
+        contacto: "scarvajal@esece.dev",
+        disponibilidad: "Los incidentes y requerimientos recibidos del servicio a través de este medio serán atendidos dentro del horario de atención hábil de la mesa de ayuda.",
+    },
+    {
+        id: "glpi",
+        icono: HandPlatterIcon,
+        contacto: "Auto servicios - Glpi",
+        disponibilidad: "Los incidentes y requerimientos recibidos del servicio a través de este medio serán atendidos dentro del horario de atención hábil de la mesa de ayuda."
     },
 ];

@@ -95,10 +95,10 @@ export const quienesSomosData: QuienesSomosItem[] = [
     },
     {
         id: 2,
-        titulo: "Conoce nuestra cultura global",
+        titulo: "Conoce nuestra cultura esece",
         descripcion: "Nuestro propósito es Crear Lazos a través de la confianza, la calidad de los procesos, el crecimiento del equipo, el desarrollo de las habilidades y el impacto positivo en cada contacto.",
         imagen: "/somos.webp",
-        imageAlt: "Cultura global - Imagen 3",
+        imageAlt: "Cultura esece - Imagen 3",
         posicion: "izquierda"
     },
     {

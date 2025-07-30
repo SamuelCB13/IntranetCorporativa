@@ -20,8 +20,7 @@ export default function HomePage() {
         <main className="w-full p-5 animate-fadeIn">
             <article className="flex flex-col items-center justify-center gap-15 w-full max-w-6xl mx-auto py-5">
                 <section className="w-full bg-neutral-950 border border-neutral-800 rounded-xl hover:translate-2 transition-all duration-200">
-                    <Link
-                        href={"#"}
+                    <div
                         className="flex flex-col md:flex-row md:items-center justify-between gap-10 py-5 px-7"
                     >
                         <div className="flex-1 flex items-start flex-col gap-3">
@@ -37,7 +36,7 @@ export default function HomePage() {
                                 </li>
                             </ol>
                             <p className="flex items-center gap-1 bg-white font-semibold text-sm border w-auto my-2 py-2 px-3 rounded-lg">
-                                Ganar con Bpogs es así de sencillo
+                                Ganar con Esece es así de sencillo
                                 <CrownIcon className="size-5" />
                             </p>
                         </div>
@@ -52,7 +51,7 @@ export default function HomePage() {
                                 quality={100}
                             />
                         </div>
-                    </Link>
+                    </div>
                 </section>
 
                 {/* Sección de Cápsulas informativas */}

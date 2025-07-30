@@ -29,28 +29,28 @@ export default function Footer() {
                         <div className=" flex-1 flex items-center justify-center md:order-2 space-x-3 md:space-x-5 rtl:space-x-reverse">
                             {/* Botón de contacto */}
                             <Link
-                                href="https://www.facebook.com/bpoglobalservices"
+                                href="https://www.facebook.com/Samuel.Carvajal13"
                                 target="_blank"
                                 className="text-neutral-500 hover:text-white font-bold rounded-full text-sm text-center transition duration-200"
                             >
                                 <FacebookIcon className="size-6" />
                             </Link>
                             <Link
-                                href="https://www.instagram.com/bpoglobalservices/"
+                                href="https://www.instagram.com/sxmuelc99_/ "
                                 target="_blank"
                                 className="text-neutral-500 hover:text-white font-bold rounded-full text-sm text-center transition duration-200"
                             >
                                 <AiFillInstagram className="size-6" />
                             </Link>
                             <Link
-                                href="https://www.linkedin.com/company/bpoglobalservices-sas/"
+                                href="https://www.linkedin.com/in/samuelcb13/"
                                 target="_blank"
                                 className="text-neutral-500 hover:text-white font-bold rounded-full text-sm text-center transition duration-200"
                             >
                                 <AiFillLinkedin className="size-6" />
                             </Link>
                             <Link
-                                href="https://www.tiktok.com/@bpoglobalservices"
+                                href="https://www.tiktok.com/@sxmuelc99_"
                                 target="_blank"
                                 className="text-neutral-500 hover:text-white font-bold rounded-full text-sm text-center transition duration-200"
                             >
@@ -64,7 +64,7 @@ export default function Footer() {
                             id="navbar-menu"
                         >
                             <ul className="flex flex-col font-black py-2 md:p-0 mt-6 border border-neutral-700 rounded-xl bg-neutral-950 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent text-xl">
-                                <p>BPO Global Services SAS.</p>
+                                <p>Esece Developers SAS.</p>
                             </ul>
                         </div>
                     </div>

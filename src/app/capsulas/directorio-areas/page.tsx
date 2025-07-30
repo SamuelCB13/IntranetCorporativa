@@ -6,66 +6,66 @@ export default function DirectorioAreasPage() {
             nombre: "Administración",
             ubicacion: "Piso 5",
             correos: [
-                "infraestructura@bpogs.com",
-                "Aguacatala: auxiliar@bpogs.com",
-                "Andes: auxiliarandes@bpogs.com",
-                "Patio bonito: auxiliarpatiobonito@bpogs.com"
+                "infraestructura@esece.com",
+                "Aguacatala: auxiliar@esece.com",
+                "Andes: auxiliarandes@esece.com",
+                "Patio bonito: auxiliarpatiobonito@esece.com"
             ]
         },
         {
             nombre: "Bienestar",
             ubicacion: "Piso 4",
             correos: [
-                "fevergara@bpogs.com",
-                "dhenao@bpogs.com",
-                "paposada@bpogs.com"
+                "fevergara@esece.com",
+                "dhenao@esece.com",
+                "paposada@esece.com"
             ]
         },
         {
             nombre: "Formación",
             ubicacion: "Piso 4 (Bahía del fondo de la operación)",
             correos: [
-                "gatilano@bpogs.com",
-                "agiraldo@bpogs.com"
+                "gatilano@esece.com",
+                "agiraldo@esece.com"
             ]
         },
         {
             nombre: "Seguridad y Salud en el trabajo",
             ubicacion: "Piso 4",
             correos: [
-                "sst@bpogs.com"
+                "sst@esece.com"
             ]
         },
         {
             nombre: "Selección",
             ubicacion: "Piso 4",
             correos: [
-                "seleccion@bpogs.com"
+                "seleccion@esece.com"
             ]
         },
         {
             nombre: "Marketing",
             ubicacion: "Piso 4",
             correos: [
-                "comunicaciones@bpogs.com",
-                "lurrea@bpogs.com"
+                "comunicaciones@esece.com",
+                "lurrea@esece.com"
             ]
         },
         {
             nombre: "Talento Humano",
             ubicacion: "Piso 5",
             correos: [
-                "talentohumano@bpogs.com",
-                "analistarh@bpogs.com",
-                "contratacion@bpogs.com",
-                "rh@bpogs.com"
+                "talentohumano@esece.com",
+                "analistarh@esece.com",
+                "contratacion@esece.com",
+                "rh@esece.com"
             ]
         },
         {
             nombre: "Tecnología / Soporte",
             ubicacion: "Piso 3",
             correos: [
-                "Greta@bpogs.com"
+                "Greta@esece.com"
             ]
         }
     ];
@@ -82,7 +82,7 @@ export default function DirectorioAreasPage() {
                             Directorio de áreas: Encuentra, conecta y consulta
                         </h1>
                         <p className="text-sm sm:text-base font-bold text-neutral-400 leading-relaxed">
-                            Información de contacto y ubicación de todas las áreas y departamentos de BPO Global Services en la sede de Aguacatala.
+                            Información de contacto y ubicación de todas las áreas y departamentos de Esece Developers en la sede de Aguacatala.
                         </p>
                     </header>
 
@@ -145,7 +145,7 @@ export default function DirectorioAreasPage() {
 
                     <section className="flex flex-col gap-4 sm:gap-6">
                         <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed">
-                            Si tienes alguna duda sobre la ubicación de las áreas o necesitas direcciones específicas, escribe al correo: comunicaciones@bpogs.com
+                            Si tienes alguna duda sobre la ubicación de las áreas o necesitas direcciones específicas, escribe al correo: comunicaciones@esece.com
                         </p>
                     </section>
                 </section>

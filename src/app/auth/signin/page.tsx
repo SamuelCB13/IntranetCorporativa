@@ -41,7 +41,7 @@ export default function SignInPage() {
                     <h1 className="text-2xl md:text-3xl font-bold leading-tight">
                         Bienvenida/o a la aplicación {" "}
                         <span className="bg-gradient-to-r from-neutral-600 to-neutral-400 text-transparent bg-clip-text font-black">Intranet Global</span>
-                        {" "}de Bpogs.
+                        {" "}de Esece.
                     </h1>
                     <p className="text-sm sm:text-base text-neutral-400">Acceda a la plataforma iniciando sesión con Google o Github, esto directamente con su correo o cuenta.</p>
                 </section>
