@@ -74,7 +74,7 @@ export default function AplicacionesPage() {
             <article className="flex flex-col items-center justify-center gap-15 w-full max-w-6xl mx-auto py-5">
                 {/* Sección de Cápsulas informativas */}
                 <section className="w-full">
-                    <div className="text-center pb-5 px-7">
+                    <div className="text-center py-5 px-7">
                         <h2 className="text-xl font-black text-white">Aplicaciones Corporativas</h2>
                         <p className="text-base font-bold text-neutral-400">
                             Hola {session?.user?.name ?? 'Usuario'}, aquí podrás ver todas las herramientas necesarias para tus labores diarias. Encuentra tus herramientas de trabajo.

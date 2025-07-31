@@ -9,7 +9,7 @@ import Providers from "./Providers";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    title: "Intranet Corporativa | Red social para empleados activos",
+    title: "Intranet Corporativa | Red social para empleados activos o vinculados en la empresa",
     keywords: ["intranet", "red social", "empleados", "corporativa"],
     description: "Intranet Corporativa: Conecta a los empleados activos de la empresa con una red social interna.",
 };

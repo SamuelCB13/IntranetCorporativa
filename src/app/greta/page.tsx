@@ -41,7 +41,7 @@ export default function GretaPage() {
                                 Aquí encontrarás una serie de opciones rápidas que puedes consultar para conocer más sobre nuestra área.
                             </p>
                         </div>
-                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-10">
+                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-10 max-w-3xl mx-auto">
                             {acciones.map((accion) => (
                                 <div
                                     key={accion.id}

@@ -86,7 +86,7 @@ export default function UsuariosPage() {
                     ) : (
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
                             {usuariosFiltrados.map((usuario) => (
-                                <div key={usuario.id} className="flex flex-col items-start gap-3 sm:gap-4 border border-neutral-800 rounded-xl p-4 sm:p-5 lg:p-6 hover:border-neutral-600 duration-200">
+                                <div key={usuario.id} className="flex flex-col items-start gap-3 sm:gap-4 border border-neutral-800 rounded-xl p-4 sm:p-5 lg:p-6 hover:border-neutral-600 hover:bg-neutral-900 duration-200">
                                     {/* Layout móvil: imagen y info lado a lado / Desktop: imagen centrada */}
                                     <section className="flex flex-row sm:flex-col items-center gap-3 sm:gap-4 w-full">
                                         {/* Imagen */}
@@ -105,8 +105,8 @@ export default function UsuariosPage() {
                                         {/* Información del usuario */}
                                         <div className="flex flex-col items-start sm:items-center justify-center gap-1 w-full text-left sm:text-center">
                                             <p className="text-base sm:text-lg font-black text-white leading-tight">{usuario.nombre}</p>
-                                            <p className="text-sm sm:text-base font-semibold text-blue-500">{usuario.cargo}</p>
-                                            <p className="text-xs font-semibold text-white px-3 py-1 bg-neutral-600 rounded-full mt-2 whitespace-nowrap">{usuario.area}</p>
+                                            <p className="text-sm sm:text-base font-semibold text-neutral-500">{usuario.cargo}</p>
+                                            <p className="text-xs font-semibold text-white px-3 py-1 bg-blue-600 rounded-full mt-2 whitespace-nowrap">{usuario.area}</p>
                                         </div>
                                     </section>
 
@@ -138,7 +138,7 @@ export default function UsuariosPage() {
                                     <section className="flex items-center w-full mt-auto">
                                         <Link
                                             href={`mailto:${usuario.correo}`}
-                                            className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-600 px-4 py-2 rounded-xl text-white font-medium text-xs sm:text-sm w-full transition-colors duration-200"
+                                            className="flex items-center justify-center gap-2 bg-neutral-800 hover:bg-neutral-600 text-white px-4 py-2 rounded-lg font-medium text-xs sm:text-sm w-full transition-colors duration-200"
                                         >
                                             <MailPlusIcon className="size-4" />
                                             <span>Contactar por correo</span>

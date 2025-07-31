@@ -18,7 +18,7 @@ export default function Navbar() {
                         {/* Logo y nombre */}
                         <Link href="/" className="flex items-center">
                             <Image
-                                src="/logofinal-blanco.webp"
+                                src="/esece-logo-claro.webp"
                                 alt="Logo de la aplicación"
                                 width={100}
                                 height={100}
@@ -94,7 +94,7 @@ export default function Navbar() {
                             id="navbar-menu"
                         >
                             <ul className="flex flex-col font-black py-2 md:p-0 mt-6 border border-neutral-700 rounded-xl bg-neutral-950 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent text-xl">
-                                <p>Bienvenidos a nuestra intranet esece</p>
+                                <p>Bienvenidos a nuestra intranet corporativa</p>
                             </ul>
                         </div>
                     </div>

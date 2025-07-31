@@ -87,7 +87,7 @@ export default function HorariosAtencionPopup({
                 <footer className="p-6 flex justify-end gap-3 border-t border-neutral-800 sticky bottom-0 bg-neutral-950">
                     <button
                         onClick={onClose}
-                        className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 px-4 py-2 rounded-lg text-white font-medium text-xs sm:text-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-neutral-950 cursor-pointer"
+                        className="flex items-center justify-center gap-2 bg-neutral-800 hover:bg-neutral-600 active:bg-neutral-400 px-4 py-2 rounded-lg text-white font-medium text-xs sm:text-sm transition-colors duration-200 focus:outline-none cursor-pointer"
                         aria-label="Cerrar popup de tiempos de espera"
                     >
                         <XIcon className="size-4" aria-hidden="true" />

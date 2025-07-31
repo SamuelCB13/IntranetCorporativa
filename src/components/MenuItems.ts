@@ -1,4 +1,4 @@
-import { ClipboardCheckIcon, HandHelpingIcon, Home, LayoutGridIcon, UsersRoundIcon } from "lucide-react";
+import { HandHelpingIcon, Home, LayoutGridIcon, SmilePlusIcon, UsersRoundIcon } from "lucide-react";
 
 export const menuItems = [
     { name: 'Inicio', href: '/', icon: Home },
@@ -6,8 +6,7 @@ export const menuItems = [
     { name: 'Usuarios', href: '/usuarios', icon: UsersRoundIcon },
     { name: 'Greta', href: '/greta', icon: HandHelpingIcon },
     { name: 'Aplicaciones', href: '/aplicaciones', icon: LayoutGridIcon },
-    // { name: 'Beneficios', href: '/archive', icon: SmilePlusIcon },
+    { name: 'Beneficios', href: '/beneficios', icon: SmilePlusIcon },
     // { name: 'Sistema de Gestión', href: '/trash', icon: MonitorCogIcon },
     // { name: 'Global Learning', href: '/trash', icon: CloudLightningIcon },
-    { name: 'Evaluación del Empleado', href: 'https://bpogs.com/Relacion_Empleado/#/login', icon: ClipboardCheckIcon }
 ];

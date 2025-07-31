@@ -91,14 +91,6 @@ export const acciones: Acciones[] = [
         href: "#",
     },
     {
-        id: "registra-solicitud",
-        titulo: "Registra tu solicitud",
-        descripcion: "Registra tu solicitud o caso que tengas y lo resolveremos lo antes posible.",
-        imagen: "/greta/greta.jpg",
-        imageAlt: "Registro de Solicitud",
-        href: "#",
-    },
-    {
         id: "solicitud-cambios",
         titulo: "Solicitud de cambios",
         descripcion: "Conoce el formato para solicitar cambios en lo que necesites y envíalo a nuestro equipo.",

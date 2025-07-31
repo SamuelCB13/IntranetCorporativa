@@ -35,7 +35,7 @@ export default function HomePage() {
                                     ¡Pero eso no es todo!, si refieres a alguien que hable español y es contratado, ¡también podrás ganar $100.000!
                                 </li>
                             </ol>
-                            <p className="flex items-center gap-1 bg-white font-semibold text-sm border w-auto my-2 py-2 px-3 rounded-lg">
+                            <p className="flex items-center gap-1 bg-neutral-800 font-medium text-xs sm:text-sm w-auto my-2 py-2 px-3 rounded-lg text-white">
                                 Ganar con Esece es así de sencillo
                                 <CrownIcon className="size-5" />
                             </p>

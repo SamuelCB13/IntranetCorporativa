@@ -31,17 +31,17 @@ export default function SignInPage() {
             <article className="animate-fadeIn w-full max-w-md md:max-w-lg text-white flex flex-col items-center justify-center text-center gap-4 sm:gap-6 md:gap-7 p-5 sm:p-6 md:p-8 bg-neutral-900/50 backdrop-blur-3xl rounded-xl sm:rounded-2xl shadow-2xl border border-neutral-700">
                 <section className="flex flex-col items-center justify-center gap-7">
                     <Image
-                        src="/logofinal.webp"
+                        src="/esece-logo-claro.webp"
                         alt="Logo de la aplicación"
-                        width={220}
-                        height={220}
+                        width={320}
+                        height={120}
                         className=""
                         quality={100}
                     />
                     <h1 className="text-2xl md:text-3xl font-bold leading-tight">
-                        Bienvenida/o a la aplicación {" "}
-                        <span className="bg-gradient-to-r from-neutral-600 to-neutral-400 text-transparent bg-clip-text font-black">Intranet Global</span>
-                        {" "}de Esece.
+                        Bienvenido/a a la aplicación {" "}
+                        <span className="bg-gradient-to-r from-neutral-600 to-neutral-400 text-transparent bg-clip-text font-black">Intranet Corporativa</span>
+                        {" "}Esece.
                     </h1>
                     <p className="text-sm sm:text-base text-neutral-400">Acceda a la plataforma iniciando sesión con Google o Github, esto directamente con su correo o cuenta.</p>
                 </section>

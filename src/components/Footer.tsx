@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { AiFillTikTok, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { useSession } from "next-auth/react";
 import FacebookIcon from "../../public/icons/facebookIcon";
+import InstagramIcon from "../../public/icons/instagramIcon";
+import LinkedInIcon from "../../public/icons/linkedInIcon";
+import TikTokIcon from "../../public/icons/tiktokIcon";
 
 export default function Footer() {
     const { data: session } = useSession();
@@ -17,7 +19,7 @@ export default function Footer() {
                         {/* Logo y nombre */}
                         <Link href="/" className=" flex-1 flex items-center justify-center">
                             <Image
-                                src="/logofinal-blanco.webp"
+                                src="/esece-logo-claro.webp"
                                 alt="Logo de la aplicación"
                                 width={100}
                                 height={100}
@@ -31,30 +33,30 @@ export default function Footer() {
                             <Link
                                 href="https://www.facebook.com/Samuel.Carvajal13"
                                 target="_blank"
-                                className="text-neutral-500 hover:text-white font-bold rounded-full text-sm text-center transition duration-200"
+                                className="text-neutral-500 rounded-full text-sm text-center transition duration-200"
                             >
                                 <FacebookIcon className="size-6" />
                             </Link>
                             <Link
                                 href="https://www.instagram.com/sxmuelc99_/ "
                                 target="_blank"
-                                className="text-neutral-500 hover:text-white font-bold rounded-full text-sm text-center transition duration-200"
+                                className="text-neutral-500 rounded-full text-sm text-center transition duration-200"
                             >
-                                <AiFillInstagram className="size-6" />
+                                <InstagramIcon className="size-6" />
                             </Link>
                             <Link
                                 href="https://www.linkedin.com/in/samuelcb13/"
                                 target="_blank"
-                                className="text-neutral-500 hover:text-white font-bold rounded-full text-sm text-center transition duration-200"
+                                className="text-neutral-500 rounded-full text-sm text-center transition duration-200"
                             >
-                                <AiFillLinkedin className="size-6" />
+                                <LinkedInIcon className="size-6" />
                             </Link>
                             <Link
                                 href="https://www.tiktok.com/@sxmuelc99_"
                                 target="_blank"
-                                className="text-neutral-500 hover:text-white font-bold rounded-full text-sm text-center transition duration-200"
+                                className="text-neutral-500 rounded-full text-sm text-center transition duration-200"
                             >
-                                <AiFillTikTok className="size-6" />
+                                <TikTokIcon className="size-6" />
                             </Link>
                         </div>
 
@@ -64,7 +66,7 @@ export default function Footer() {
                             id="navbar-menu"
                         >
                             <ul className="flex flex-col font-black py-2 md:p-0 mt-6 border border-neutral-700 rounded-xl bg-neutral-950 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent text-xl">
-                                <p>Esece Developers SAS.</p>
+                                <p>Esece — Developing Dreams —</p>
                             </ul>
                         </div>
                     </div>
