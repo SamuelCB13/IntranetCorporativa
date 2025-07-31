@@ -87,3 +87,62 @@ export const ultimasVacantes: UltimasVacantes[] = [
         urgencia: "Se necesita urgente",
     }
 ];
+
+export interface Beneficios {
+    id: number;
+    titulo: string;
+    descripcion: string;
+    detalle: string;
+    imagen: string;
+    imageAlt: string;
+    posicion: 'izquierda' | 'derecha';
+}
+
+// Datos para la sección beneficios
+export const beneficios: Beneficios[] = [
+    {
+        id: 1,
+        titulo: "Tiquetera de Beneficios",
+        descripcion: "En Esece contamos con tiquetera de beneficios que lleva rumbo a la Felicidad, armonizando la vida personal con la vida laboral. ¿Cuáles son los tiquetes que podrás disfrutar?",
+        detalle: "Un día libre por cumpleaños | Medio día por graduación académica | Un día libre por matrimonio | Reconocimiento por cumplir 5 años en la compañía (Quinquenios).",
+        imagen: "/beneficios/tiquetera.webp",
+        imageAlt: "Tiquetera de Beneficios",
+        posicion: "derecha",
+    },
+    {
+        id: 2,
+        titulo: "Convenios",
+        descripcion: "Contamos con convenios con diferentes empresas para ofrecerte descuentos exclusivos en productos y servicios. Pensamos en tu bienestar y en el de tu familia, por eso tenemos estos convenios.",
+        detalle: "SmartFit. Accediendo a los planes del gimnasio, tendrás acceso ilimitado a las sedes a nivel nacional e internacional, ingreso a las clases grupales y uso de las instalaciones | Caja de Compensación. ¿Sabes que nos ofrece la Caja de compensación? Te invitamos a conocer todos los servicios que tiene Comfama.",
+        imagen: "/beneficios/convenio.webp",
+        imageAlt: "Convenios",
+        posicion: "izquierda",
+    },
+    {
+        id: 3,
+        titulo: "Aniversarios",
+        descripcion: "Celebramos cada año de las campañas, junto con nuestros aliados. Estas fechas especiales son motivo de alegría en Esece!",
+        detalle: "Este mes celebramos la creación de nuestros lazos y el inicio de una nueva etapa en Esece. ¡Feliz aniversario! | Celebramos el aniversario de Vercel y Nextjs con sorpresas y momentos inolvidables.",
+        imagen: "/beneficios/aniversario.webp",
+        imageAlt: "Aniversarios",
+        posicion: "derecha",
+    },
+    {
+        id: 4,
+        titulo: "Calendario de actividades",
+        descripcion: "Cada mes tenemos fechas programadas, para salir de la cotidianidad, generar espacio de esparcimiento e integración disfrutar de nuestra diversidad y cultura.",
+        detalle: "Cada mes tenemos fechas programadas, para salir de la cotidianidad, generar espacio de esparcimiento e integración disfrutar de nuestra diversidad y cultura.",
+        imagen: "/beneficios/calendario.webp",
+        imageAlt: "Calendario de actividades",
+        posicion: "izquierda",
+    },
+    {
+        id: 5,
+        titulo: "Crecimiento profesional",
+        descripcion: "Celebramos tu crecimiento profesional, por eso queremos recordarte algunas de nuestras políticas internas, tus beneficios y el procedimiento para realizar solicitudes.",
+        detalle: "¡Ahora sí! Bienvenidx a Esece, abre el documento para conocer tus beneficios, deberes y otra información que te puede interesar | Celebramos tu crecimiento profesional, por eso queremos recordarte algunas de nuestras políticas internas, tus beneficios y el procedimiento para realizar solicitudes.",
+        imagen: "/beneficios/escalamiento.webp",
+        imageAlt: "Crecimiento profesional",
+        posicion: "derecha",
+    }
+];

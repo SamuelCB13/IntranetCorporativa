@@ -40,7 +40,7 @@ export default function UsuariosPage() {
             <article className="flex flex-col items-center justify-center gap-15 w-full max-w-5xl mx-auto py-5">
                 <section className="w-full bg-neutral-950">
                     <div className="text-center py-5 px-7">
-                        <h2 className="text-xl font-black text-white">Directorio de Usuarios</h2>
+                        <h2 className="text-xl font-black text-white">Directorio de usuarios</h2>
                         <p className="text-base font-bold text-neutral-400">
                             Aquí encontrarás un listado de usuarios registrados en el sistema.
                         </p>
