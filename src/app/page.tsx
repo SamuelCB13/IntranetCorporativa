@@ -42,11 +42,11 @@ export default function HomePage() {
                         </div>
                         <div className="flex-1">
                             <Image
-                                src="/referidos.webp"
+                                src="/beneficios/desarrolladores.jpg"
                                 alt="Referidos Image"
                                 width={512}
                                 height={256}
-                                className="rounded-t-xl w-full h-64 object-cover object-top mask-bottom"
+                                className="rounded-t-xl w-full h-64 object-cover object-center mask-bottom"
                                 priority
                                 quality={100}
                             />

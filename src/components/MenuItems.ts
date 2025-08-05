@@ -8,5 +8,4 @@ export const menuItems = [
     { name: 'Aplicaciones', href: '/aplicaciones', icon: AppWindowIcon },
     { name: 'Beneficios', href: '/beneficios', icon: SmilePlusIcon },
     // { name: 'Sistema de Gestión', href: '/trash', icon: MonitorCogIcon },
-    // { name: 'Global Learning', href: '/trash', icon: CloudLightningIcon },
 ];

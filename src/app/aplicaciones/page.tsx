@@ -27,7 +27,7 @@ const SeccionAplicaciones = ({ titulo, descripcion, aplicaciones }: { titulo: st
                     key={aplicacion.id}
                     className="flex flex-col items-start gap-3 border border-neutral-800 rounded-xl hover:bg-neutral-900 group transition-all duration-100 py-4">
                     <section className="flex items-center gap-3 px-5 w-full">
-                        <div className="border border-neutral-600 rounded-full relative size-10 group-hover:bg-white">
+                        <div className="rounded-full relative size-10 group-hover:bg-white">
                             {/* Imagen por defecto */}
                             <Image
                                 src={aplicacion.imagen}
