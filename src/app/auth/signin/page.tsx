@@ -1,11 +1,12 @@
 'use client';
 
-import { FcGoogle } from "react-icons/fc";
 import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { CircleAlertIcon } from "lucide-react";
 import { redirect } from "next/navigation";
+import GitHubIcon from "../../../../public/icons/githubIcon";
+import GoogleIcon from "../../../../public/icons/googleIcon";
 
 export default function SignInPage() {
     const { data: session } = useSession();
@@ -48,14 +49,14 @@ export default function SignInPage() {
                 <section className="w-full flex flex-col items-center justify-center gap-3">
                     <button className="w-full flex items-center justify-center gap-2 sm:gap-3 px-3 sm:px-4 py-3 sm:py-4 text-sm sm:text-base text-white bg-gradient-to-r from-neutral-500 to-neutral-800 rounded-full hover:opacity-70 focus:opacity-50 transition duration-200 cursor-pointer"
                         onClick={() => signIn("google", { callbackUrl: "/" })}>
-                        <FcGoogle className="size-5 sm:size-6" />
+                        <GoogleIcon className="size-5 sm:size-6" />
                         <span className="font-medium">Iniciar sesión con Google</span>
                     </button>
-                    {/* <button className="w-full flex items-center justify-center gap-2 sm:gap-3 px-3 sm:px-4 py-3 sm:py-4 text-sm sm:text-base text-white bg-gradient-to-r from-neutral-500 to-neutral-800 rounded-full hover:opacity-70 focus:opacity-50 transition duration-200 cursor-pointer"
+                    <button className="w-full flex items-center justify-center gap-2 sm:gap-3 px-3 sm:px-4 py-3 sm:py-4 text-sm sm:text-base text-white bg-gradient-to-r from-neutral-500 to-neutral-800 rounded-full hover:opacity-70 focus:opacity-50 transition duration-200 cursor-pointer"
                         onClick={() => signIn("github", { callbackUrl: "/" })}>
-                        <GithubIcon className="size-5 sm:size-6" />
+                        <GitHubIcon className="size-5 sm:size-6" />
                         <span className="font-medium">Iniciar sesión con Github</span>
-                    </button> */}
+                    </button>
                 </section>
                 <div className="flex items-center justify-center gap-1 text-xs sm:text-sm">
                     <CircleAlertIcon className="size-3 sm:size-4" />

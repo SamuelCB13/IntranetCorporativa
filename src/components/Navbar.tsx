@@ -54,9 +54,11 @@ export default function Navbar() {
                                                 <span className="block text-sm text-neutral-300 font-bold truncate">
                                                     Hola, {session.user.name} 👋🏻
                                                 </span>
-                                                <span className="flex items-center gap-1 text-sm text-neutral-400 truncate">
-                                                    <MailCheckIcon className="size-4" /> {session.user.email}
-                                                </span>
+                                                {session.user.email && (
+                                                    <span className="flex items-center gap-1 text-sm text-neutral-400 truncate">
+                                                        <MailCheckIcon className="size-4" /> {session.user.email}
+                                                    </span>
+                                                )}
                                             </div>
                                             <ul className="py-2">
                                                 <li>
