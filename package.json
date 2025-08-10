@@ -1,6 +1,6 @@
 {
-  "name": "intranet-corporativa",
-  "version": "0.1.0",
+  "name": "intranet-esece",
+  "version": "1.0.16",
   "private": true,
   "scripts": {
     "dev": "next dev",

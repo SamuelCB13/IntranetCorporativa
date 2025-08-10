@@ -93,7 +93,7 @@ export default function RegimenTransicionPage() {
                             <Link
                                 href="https://forms.office.com/pages/responsepage.aspx?id=EMzAYcHr-0CzL97xxmpAPDWNi77CuhVDvBGleffS4IVUOFlHVlkyWU85U0FCSUxTOU9SS1VJNDMyWS4u&route=shorturl"
                                 target="_blank"
-                                className="text-blue-400 hover:underline"
+                                className="text-blue-500 hover:underline"
                             >
                                 aquí
                             </Link> y diligencia el formulario!

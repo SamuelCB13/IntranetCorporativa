@@ -72,7 +72,7 @@ export default function Footer() {
                     </div>
                     <div className="max-w-screen-lg flex items-center justify-center mx-auto p-5 border-t border-neutral-800">
                         <p className="text-sm text-neutral-400 text-center">
-                            © {new Date().getFullYear()} Todos los derechos reservados / All rights reserved.
+                            © {new Date().getFullYear()} Intranet Esece | Desarrollado con 💙 por →{" "} <Link href={"https://samuel-c.vercel.app"} className="text-blue-500 italic">Samuel C.</Link>
                         </p>
                     </div>
                 </footer>

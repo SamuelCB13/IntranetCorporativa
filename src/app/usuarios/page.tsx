@@ -106,7 +106,7 @@ export default function UsuariosPage() {
                                         <div className="flex flex-col items-start sm:items-center justify-center gap-1 w-full text-left sm:text-center">
                                             <p className="text-base sm:text-lg font-black text-white leading-tight">{usuario.nombre}</p>
                                             <p className="text-sm sm:text-base font-semibold text-neutral-500">{usuario.cargo}</p>
-                                            <p className="text-xs font-semibold text-white px-3 py-1 bg-blue-600 rounded-full mt-2 whitespace-nowrap">{usuario.area}</p>
+                                            <p className="text-xs font-semibold text-white px-3 py-1 bg-blue-500 rounded-full mt-2 whitespace-nowrap">{usuario.area}</p>
                                         </div>
                                     </section>
 

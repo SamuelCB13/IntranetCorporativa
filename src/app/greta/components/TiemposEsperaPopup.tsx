@@ -39,7 +39,7 @@ export default function TiemposEsperaPopup({
                 {/* Header */}
                 <header className="flex items-center justify-between p-6 border-b border-neutral-800 sticky top-0 bg-neutral-950 z-10">
                     <div className="flex items-center gap-3">
-                        <div className="p-2 bg-blue-600 rounded-full flex items-center justify-center">
+                        <div className="p-2 bg-blue-500 rounded-full flex items-center justify-center">
                             <ClockIcon className="size-4 text-white" aria-hidden="true" />
                         </div>
                         <h1 id="popup-title" className="text-2xl font-black text-white">

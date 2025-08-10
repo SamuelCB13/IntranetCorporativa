@@ -72,7 +72,7 @@ export default function Sidebar() {
                                         placeholder="Buscar página..."
                                         value={searchTerm}
                                         onChange={(e) => setSearchTerm(e.target.value)}
-                                        className="w-full pl-10 pr-4 py-2 bg-neutral-800 text-white border border-neutral-700 rounded-full hover:border-blue-400 focus:border-blue-400 focus:outline-none transition duration-200 focus:text-blue-400 text-sm"
+                                        className="w-full pl-10 pr-4 py-2 bg-neutral-800 text-white border border-neutral-700 rounded-full hover:border-blue-500 focus:border-blue-500 focus:outline-none transition duration-200 focus:text-blue-500 text-sm"
                                     />
                                 </div>
                             </div>
@@ -89,13 +89,13 @@ export default function Sidebar() {
                                         href={item.href}
                                         title={item.name}
                                         className={`
-                                            ${active ? 'bg-neutral-800 text-blue-400' : 'text-neutral-300 hover:bg-neutral-800'}
+                                            ${active ? 'bg-neutral-800 text-blue-500' : 'text-neutral-300 hover:bg-neutral-800'}
                                             ${isCollapsed ? 'justify-center p-3' : 'px-3 py-2'}
                                             flex items-center rounded-full transition-all duration-200 group
                                         `}
                                     >
                                         <Icon className={`
-                                            ${active ? 'text-blue-400' : 'text-neutral-400 group-hover:text-white'}
+                                            ${active ? 'text-blue-500' : 'text-neutral-400 group-hover:text-white'}
                                             ${isCollapsed ? 'w-6 h-6' : 'size-5'}
                                             flex-shrink-0
                                         `} />
@@ -130,7 +130,7 @@ export default function Sidebar() {
                                             placeholder="Buscar página..."
                                             value={searchTerm}
                                             onChange={(e) => setSearchTerm(e.target.value)}
-                                            className="w-full pl-10 pr-4 py-2 bg-neutral-800 text-white border border-neutral-700 rounded-full hover:border-blue-400 focus:border-blue-400 focus:outline-none transition duration-200 focus:text-blue-400 text-sm"
+                                            className="w-full pl-10 pr-4 py-2 bg-neutral-800 text-white border border-neutral-700 rounded-full hover:border-blue-500 focus:border-blue-500 focus:outline-none transition duration-200 focus:text-blue-500 text-sm"
                                         />
                                     </div>
                                 </div>
@@ -145,13 +145,13 @@ export default function Sidebar() {
                                                 href={item.href}
                                                 title={item.name}
                                                 className={`
-                                                    ${active ? 'bg-neutral-800 text-blue-400' : 'text-neutral-300 hover:bg-neutral-800'}
+                                                    ${active ? 'bg-neutral-800 text-blue-500' : 'text-neutral-300 hover:bg-neutral-800'}
                                                     px-3 py-2 flex items-center rounded-full transition-all duration-200 group
                                                 `}
                                                 onClick={toggleMobileSidebar}
                                             >
                                                 <Icon className={`
-                                                    ${active ? 'text-blue-400' : 'text-neutral-400 group-hover:text-white'}
+                                                    ${active ? 'text-blue-500' : 'text-neutral-400 group-hover:text-white'}
                                                     size-5 flex-shrink-0
                                                 `} />
                                                 <span className="ml-3 text-sm font-medium">{item.name}</span>

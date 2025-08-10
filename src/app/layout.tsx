@@ -5,13 +5,14 @@ import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Providers from "./Providers";
+import Buttons from "@/components/Buttons";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    title: "Intranet Corporativa | Red social para empleados activos o vinculados en la empresa",
+    title: "Intranet Esece | Red social para empleados activos o vinculados en la empresa",
     keywords: ["intranet", "red social", "empleados", "corporativa"],
-    description: "Intranet Corporativa: Conecta a los empleados activos de la empresa con una red social interna.",
+    description: "Intranet Esece: Conecta a los empleados activos de la empresa con una red social interna.",
 };
 
 export default function RootLayout({
@@ -35,6 +36,9 @@ export default function RootLayout({
                                 <Footer />
                             </main>
                         </div>
+
+                        {/* Botones flotantes */}
+                        <Buttons />
                     </div>
                 </Providers>
             </body>
